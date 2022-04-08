@@ -58,11 +58,17 @@ class Carrito {
 
     detalle() {
 
+        let msj = '';
+
         if (this.juegos.length == 0) {
             return `El carrito se encuentra vacío`;
         }
 
-        let msj = `El carrito contiene ${this.juegos.length} juegos:\n`;
+        if (this.juegos.length == 1) {
+            msj = `El carrito contiene ${this.juegos.length} juego:\n`;
+        } else {
+            msj = `El carrito contiene ${this.juegos.length} juegos:\n`;
+        }
 
         this.juegos.forEach(juego => {
             msj += ` - ${juego.nombre} - $ ${juego.precio}\n`;
