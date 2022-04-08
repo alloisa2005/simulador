@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border: 2px solid red;
+    border-radius: 10px;
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.card:hover {
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.izq {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.med {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.med p {
+    margin-bottom: 3px;
+}
+
+.der {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.izq img {
+    width: 100%;
+    height: 80px;
+}
